@@ -1,0 +1,26 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "export NODE_ENV=dev && nodemon server.js",
+    "start:debug": "export NODE_ENV=debug && nodemon server.js",
+    "test:debug": "export NODE_ENV=debug && jest --verbose"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@supercharge/request-ip": "^1.1.2",
+    "body-parser": "^1.19.0",
+    "config": "^3.2.3",
+    "consign": "^0.1.6",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "lokijs": "^1.5.12",
+    "node-fetch": "^2.6.1",
+    "nodemon": "1.19.4",
+    "uuidv4": "^6.2.12"
+  }
+}

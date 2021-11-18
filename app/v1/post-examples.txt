@@ -1,0 +1,29 @@
+
+#### Add Products
+
+curl --location --request POST 'http://localhost:8090/api/v1/product' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+	"name":"Ração Animal",
+	"price":"17,8"
+}'
+
+
+#### Add clients
+
+curl --location --request POST 'http://localhost:8090/api/v1/client' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+	"name":"Manuel Silva",
+	"age":"15",
+	"gender":"Male",
+	"cpf":"35525645800",
+    "address": {
+        "street": "rua x",
+        "city":"hortolandia",
+        "neighborhood":"Jr Colinas",
+        "number":"1851",
+        "postalCode":"13188182",
+        "state":"SP"
+    }
+}'
